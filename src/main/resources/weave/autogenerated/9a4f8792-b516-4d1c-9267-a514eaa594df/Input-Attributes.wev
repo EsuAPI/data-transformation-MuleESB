@@ -1,0 +1,15 @@
+%dw 2.0
+
+type auto_9a4f8792_b516_4d1c_9267_a514eaa594df_Input_Attributes = {|
+  lastModifiedTime: DateTime {"typeId": "java.time.LocalDateTime"}, 
+  lastAccessTime: DateTime {"typeId": "java.time.LocalDateTime"}, 
+  creationTime: DateTime {"typeId": "java.time.LocalDateTime"}, 
+  size: Number, 
+  regularFile?: Boolean {"typeId": "boolean"}, 
+  directory?: Boolean {"typeId": "boolean"}, 
+  symbolicLink?: Boolean {"typeId": "boolean"}, 
+  path: String, 
+  fileName: String
+|} {"typeAlias": "LocalFileAttributes",
+"typeId": "org.mule.extension.file.api.LocalFileAttributes"}
+
